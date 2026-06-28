@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 14 — María José</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">¡Feliz 14 — María José!</h1>
+        
+        <div class="greeting-box">
+            <p id="greetingText" class="greeting-text"></p>
+        </div>
+
+        <!-- Canvas para animación de Chuy -->
+        <canvas id="chuyCanvas" class="chuy-canvas" width="520" height="260"></canvas>
+
+        <!-- Área de portada -->
+        <div class="poster-container">
+            <img id="posterImage" class="poster-image" src="" alt="Portada temática" style="display:none;">
+            <div id="posterPlaceholder" class="poster-placeholder">Portada no cargada</div>
+        </div>
+
+        <!-- Botones principales -->
+        <div class="button-group">
+            <button class="btn" onclick="app.newMessage()">Generar otra felicitación</button>
+            <button class="btn" onclick="app.saveText()">Guardar felicitación (texto)</button>
+            <button class="btn" onclick="app.showThemeArtwork()">Mostrar portada temática</button>
+        </div>
+
+        <!-- Botones Spotify -->
+        <div class="button-group">
+            <button class="btn spotify-btn" onclick="app.playSong('deftones_albums')">🎵 Ir a discos (Deftones)</button>
+            <button class="btn spotify-btn" onclick="app.playSong('cerati_albums')">🎵 Ir a discos (Cerati)</button>
+            <button class="btn spotify-btn" onclick="app.playSong('radiohead_albums')">🎵 Ir a discos (Radiohead)</button>
+            <button class="btn spotify-btn" onclick="app.playSong('user_playlist')">🎵 Abrir playlist (usuario)</button>
+        </div>
+
+        <!-- Controles de audio -->
+        <div class="audio-controls">
+            <span id="audioStatus" class="audio-status">Música de fondo: apagada</span>
+            <button class="btn" onclick="app.openTrackOnYoutube()">Abrir pista en YouTube</button>
+        </div>
+
+        <!-- Notas -->
+        <div class="note">
+            <p>
+                Nota: las portadas se obtienen desde la API pública de iTunes. Los botones 'Ir a discos' abren búsquedas de álbumes en Spotify.
+            </p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
