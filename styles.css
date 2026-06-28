@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0b0b0b 0%, #1a0f1f 100%);
+    color: #FFF2D1;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: rgba(11, 11, 11, 0.95);
+    border: 2px solid #FFF2D1;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 0 40px rgba(255, 242, 209, 0.1);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(255, 242, 209, 0.3);
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 20px rgba(255, 242, 209, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 40px rgba(255, 242, 209, 0.6);
+    }
+}
+
+.greeting-box {
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid #FFF2D1;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting-text {
+    line-height: 1.8;
+    font-size: 13px;
+    text-align: center;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-style: italic;
+}
+
+.chuy-canvas {
+    width: 100%;
+    height: auto;
+    background: #000;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.poster-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #111;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.poster-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.poster-placeholder {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.button-group button {
+    width: 100%;
+}
+
+.btn {
+    background: linear-gradient(135deg, #FFF2D1, #FFD699);
+    color: #0b0b0b;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 242, 209, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #FFD699, #FFF2D1);
+    box-shadow: 0 6px 25px rgba(255, 242, 209, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.spotify-btn {
+    background: linear-gradient(135deg, #1DB954, #1ed760);
+    color: white;
+    box-shadow: 0 4px 15px rgba(30, 215, 96, 0.3);
+}
+
+.spotify-btn:hover {
+    background: linear-gradient(135deg, #1ed760, #1DB954);
+    box-shadow: 0 6px 25px rgba(30, 215, 96, 0.5);
+}
+
+.audio-controls {
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px solid #FFF2D1;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.audio-status {
+    flex: 1;
+    min-width: 150px;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.audio-controls .btn {
+    padding: 8px 12px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.note {
+    background: rgba(20, 20, 20, 0.8);
+    border-left: 3px solid #FFF2D1;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.note p {
+    margin: 0;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .container {
+        padding: 16px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .button-group {
+        grid-template-columns: 1fr;
+    }
+
+    .greeting-text {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+}
