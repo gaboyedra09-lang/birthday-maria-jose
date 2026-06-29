@@ -225,7 +225,11 @@ class BirthdayApp {
     openTrackOnYoutube() {
         window.open(YOUTUBE_TRACK_URL, "_blank");
     }
-
+    
+    openTikTok() {
+        window.open("https://vt.tiktok.com/ZSCUBDfp8/", "_blank");
+    }
+       
     startChuyAnimation() {
         if (this.animRunning) return;
 
