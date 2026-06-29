@@ -5,7 +5,7 @@ const PERSON = {
     gender: "mujer"
 };
 
-const CLOSING_TEXT = `no sé qué es lo que hice mal para que tú te enamoraras de otra persona, pero espero que, si estas con esa persona te valla bien, esto lo empecé a modificar el 28 de junio no sé porque lo hago, solo quiero que estes con quien estes tu seas feliz y aprende de tus errores por si un día llega alguien que te trate mejor de lo que yo o alguien lo hizo, y aprende de tus errores no los vuelvas a cometer, ya por ultimo espero que este día te la pases bien con quien estes y con tu familia, nunca pienses que nadie te va a querer, pos data esto no lo tenia escrito todo esto lo tuve que reacer ya que ya lo tenia hecho de una forma diferente por lo que sucedio ya que esto estava echo para pedirte que fueras mi novia por segunda ves`;
+const CLOSING_TEXT = `no sé qué es lo que hice mal para que tú te enamoraras de otra persona, pero espero que, si estas con esa persona te valla bien, esto lo empecé a modificar el 28 de junio no sé porque lo hago, solo quiero que estes con quien estes tu seas feliz y aprende de tus errores por si un día llega alguien que te trate mejor de lo que yo o alguien lo hizo, y aprende de tus errores no los vuelvas a cometer, ya por ultimo espero que este día te la pases bien con quien estes y con tu familia, nunca pienses que nadie te va a querer, pos data esto no lo tenia escrito todo esto lo tuve que reacer ya que ya lo tenia hecho de una forma diferente por lo que sucedio ya que esto estava hecho para pedirte que fueras mi novia por segunda ves pero sucedio lo contrario. espero que seas feliz.`;
 
 const SIGNATURE = "\n\ncon cariño Mapachito";
 
